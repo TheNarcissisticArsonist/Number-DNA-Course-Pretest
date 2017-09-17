@@ -159,14 +159,14 @@ var questions = {
 	solveEquations: [
 		//
 	],
-	addSubtractFractions: [
+	addSubtractFractions: [ //[a,b,c,+,d,e,f] becomes a(b/c)+d(e/f) where a(b/c) is the mixed number a b/c.
 		["", 5, 11, "+", "", 2, 11],  ["", 3, 8, "+", "", 1, 2],
 		["", 11, 12, "-", "", 7, 12], ["", 16, 25, "+", "", 4, 15],
 		["", 5, 6, "-", "", 7, 20],   ["", 11, 18, "+", "", 5, 12],
 		["", 6, 11, "-", "", 17, 33], [5, "", "", "-", 2, 1, 5],
 		[-1, 4, 5, "-", 2, 1, 2],     [-2, 4, 9, "+", 1, 1, 6]
 	],
-	multiplyDivideFractions: [
+	multiplyDivideFractions: [ //Same as above. Use &bull; or &times; for multiplication.
 		["", 2, 3, "&bull;", "", 1, 5],     ["", 3, 5, "&divide;", "", 1, 3],
 		["", 7, 8, "&bull;", "", 4, 7],     ["", 10, 11, "&divide;", "", 3, 44],
 		["", 9, 14, "&divide;", "", 18, 7], ["", 16, 25, "&bull;", "", 5, 8],
