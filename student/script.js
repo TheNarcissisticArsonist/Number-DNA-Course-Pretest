@@ -129,7 +129,11 @@ var questions = {
 		[72, -17]
 	],
 	orderOfOperations: [
-		["6+3&bull;2"]
+		["6+3&bull;2"], ["12-6&bull;2"]
+		["16+&divide;&bull;4"], ["8&bull;4&divide;2"],
+		["2&bull;3^4"],  ["-3^2"]
+		["(2+3)^2"],  ["2&bull;&bull;2^2+3^2"]
+		["8(3+4)"],  ["-(-2)^2"]
 	],
 	equivalentFractions: [
 		[1, 2, 4, 8, 12],
@@ -156,7 +160,12 @@ var questions = {
 		
 	],
 	solveEquations: [
-		["a-5=4"]
+		["a-5=4"],  ["3x=12"],
+		["h+(-4)=7"],  ["-4x+15=-21"],
+		["10m+30=8m-50"],  ["11t+9t-10=50"],
+		["3(a-5)=18"],  ["(1/2)n+(3/5)=(2/3)"],
+		["(4/5)b=(8/15)"],  ["(4/3)w =(3/2)=(5/6)"]
+	
 	],
 	addSubtractFractions: [ //[a,b,c,+,d,e,f] becomes a(b/c)+d(e/f) where a(b/c) is the mixed number a b/c.
 		["", 5, 11, "+", "", 2, 11],  ["", 3, 8, "+", "", 1, 2],
@@ -190,16 +199,25 @@ var questions = {
 	],
 	decimals: [
 		["Which digit is in the thousandths place? 95603.84172"],
-		["3.5+1.3"],
+		["Which digit is in the tenths place? 95603.84172"],
+		["3.5+1.3"], ["7.6+1.23"], ["10.4-6.6"], ["2.5&bull;0.02"],
+		["4.03&bull;2.0"], ["0.002&bull;0.05"], ["12.6&divide;4.2"],
 		["5.2&divide;0.01"]
 	],
 	percents: [
-		["Write as a percent: 1/10"],
-		["Write as a reduced fraction: 25%"],
-		["25% of 80 is"]
+		["Write as a percent: 1/10"], ["Write as a percent: 7/25"],
+		["Write as a percent: 1.25"], ["Write as a percent: 0.04"],
+		["Write as a reduced fraction: 25%"],["Write as a reduced fraction: 45%"]
+		["Write as a decimal: 0.45%"],["Write as a decimal: 150%"]
+		["25% of 80 is"], ["What is 110% of 80?"]
 	],
 	percentProblems: [
-		["40 is 80% of"]
+		["40 is 50% of"], ["12 is what percent of 60?"],
+		
+		["Jackson started the month with a debit card balance of $500. He finished the month with a balance of $400. By what percent did his balance decrease?"],
+		 
+		["Monet started the month with a debit card balance of $200. Shee finished the month with a balance of $500. By what percent did her balance increase?"],
+		 
 	]
 };
 var correctAnswers = {
@@ -314,7 +332,11 @@ var correctAnswers = {
 		[-9, -8]
 	],
 	orderOfOperations: [
-		[12]
+		[12], [0],
+		[32], [16],
+		[18], [-9],
+		[25], [15],
+		[56], [-4]
 	],
 	equivalentFractions: [
 		[2,4,6],    [4,8,10],
@@ -335,7 +357,11 @@ var correctAnswers = {
 		[0, 64, 7]
 	],
 	solveEquations: [
-		[19]
+		[19], [4],
+		[11], [9],
+		[-40], [30],
+		[11], [2/5],
+		[2/3], [1-7/4]
 	],
 	addSubtractFractions: [
 		[7, 11],  [7, 8],
@@ -368,17 +394,20 @@ var correctAnswers = {
 		[803000], [14]
 	],
 	decimals: [
-		[1],
-		[4.8],
-		[520]
+		[1],[0],
+		[4.8], [9.348], [3.8], [0.05],
+		[8.06], [0.0001], [3], [520]
 	],
 	percents: [
-		[10],
-		[1/4],
-		[20]
+		[10], [28],
+		[125], [4],
+		[1/4],[9/20],
+		[0.0045],[1.5],
+		[20], [88]
 	],
 	percentProblems: [
-		[50]
+		[50], [20%], 
+		[20%], [88]
 	]
 };
 var userAnswers = {
