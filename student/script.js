@@ -130,7 +130,7 @@ var questions = {
 		//[72, -17]
 	],
 	orderOfOperations: [
-		//
+		["6+3&bull;2"]
 	],
 	equivalentFractions: [
 		[1, 2, 4, 8, 12],
@@ -157,7 +157,7 @@ var questions = {
 		
 	],
 	solveEquations: [
-		//
+		["a-5=4"]
 	],
 	addSubtractFractions: [ //[a,b,c,+,d,e,f] becomes a(b/c)+d(e/f) where a(b/c) is the mixed number a b/c.
 		["", 5, 11, "+", "", 2, 11],  ["", 3, 8, "+", "", 1, 2],
@@ -190,13 +190,17 @@ var questions = {
 		[8.03, 5], [1.4, 1]
 	],
 	decimals: [
-		//
+		["Which digit is in the thousandths place? 95603.84172"],
+		["3.5+1.3"],
+		["5.2&divide;0.01"]
 	],
 	percents: [
-		//
+		["Write as a percent: 1/10"],
+		["Write as a reduced fraction: 25%"],
+		["25% of 80 is"]
 	],
 	percentProblems: [
-		//
+		["40 is 80% of"]
 	]
 };
 var correctAnswers = {
@@ -213,7 +217,6 @@ var correctAnswers = {
 		[64],  [132],  [56],
 		[625], [96], [121],
 		[42], [84],  [300]
-
 	],
 	divideWholeNumbers: [
 		[5],  [0], [6],
@@ -228,7 +231,6 @@ var correctAnswers = {
 		[9],  [12], [8],
 		[7],  [9],  [11],
 		[16], [12],  [9]
-
 	],
 	divisibility: [
 		["2,4"],
@@ -247,7 +249,6 @@ var correctAnswers = {
 		["1,3,5,15,25,75"],
 		["1,3,17,51"],
 		["1,2,4,5,8,10,16,20,40,80"]
-
 	],
 	primeFactorization: [
 		["2,2,2,3"],
@@ -314,7 +315,7 @@ var correctAnswers = {
 		[-9, -8]
 	],
 	orderOfOperations: [
-		//
+		[12]
 	],
 	equivalentFractions: [
 		[2,4,6],    [4,8,10],
@@ -333,10 +334,9 @@ var correctAnswers = {
 		[0, 13, 3],  [7, 0, 2],  [0, -28, 5],
 		[-1, 5, 7],  [0, 59, 8], [11, 1, 2],
 		[0, 64, 7]
-		
 	],
 	solveEquations: [
-		//
+		[19]
 	],
 	addSubtractFractions: [
 		[0, 7, 11],  [0, 7, 8],
@@ -369,13 +369,17 @@ var correctAnswers = {
 		[803000], [14]
 	],
 	decimals: [
-		//
+		[1],
+		[4.8],
+		[520]
 	],
 	percents: [
-		//
+		[10],
+		[1/4],
+		[20]
 	],
 	percentProblems: [
-		//
+		[50]
 	]
 };
 var userAnswers = {
