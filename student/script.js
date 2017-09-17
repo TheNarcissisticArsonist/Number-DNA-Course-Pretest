@@ -579,7 +579,7 @@ function checkAnswers() {
 		for(var j=0; j<correctAnswers[currentTestName].length; ++j) {
 			var correct = true;
 			if(requiresSpecificCheck[currentTestName]) {
-				if(userAnswers[currentTestName][j] == null) {
+				if(userAnswers[currentTestName][j][0] == null) {
 					correct = false;
 				}
 				else {
