@@ -18,7 +18,6 @@ var questions = {
 		[8, 8],  [11, 12],  [8, 7],
 		[25, 25], [12, 8],  [11, 11],
 		[7, 6],   [12, 7],   [25, 12]
-
 	],
 	divideWholeNumbers: [ //[a, b] makes the question a / b
 		[10, 2],    [0, 5],   [30, 5],
@@ -51,7 +50,6 @@ var questions = {
 		[6, 75],
 		[4, 51],
 		[10, 80]
-
 	],
 	primeFactorization: [
 		[24],
@@ -62,7 +60,6 @@ var questions = {
 		[210],
 		[144],
 		[51]
-
 	],
 	leastCommonMultiple: [ //[a, b] makes the question LCM(a, b)
 		[4, 3],
@@ -73,7 +70,6 @@ var questions = {
 		[9, 6],
 		[20, 12],
 		[18, 24]
-
 	],
 	greatestCommonFactor: [ //[a, b] makes the question GCF(a, b)
 		[6, 8],
@@ -84,7 +80,6 @@ var questions = {
 		[40, 56],
 		[150, 225],
 		[8, 25]
-
 	],
 	addSubtractIntegers: [
 		[-3, "+", -1],      [-4, "-", 0],       [-2, "+", 1],
@@ -129,11 +124,11 @@ var questions = {
 		[72, -17]
 	],
 	orderOfOperations: [
-		["6+3&bull;2"], ["12-6&bull;2"]
+		["6+3&bull;2"],         ["12-6&bull;2"],
 		["16+&divide;&bull;4"], ["8&bull;4&divide;2"],
-		["2&bull;3^4"],  ["-3^2"]
-		["(2+3)^2"],  ["2&bull;&bull;2^2+3^2"]
-		["8(3+4)"],  ["-(-2)^2"]
+		["2&bull;3^4"],         ["-3^2"],
+		["(2+3)^2"],            ["2&bull;&bull;2^2+3^2"],
+		["8(3+4)"],             ["-(-2)^2"]
 	],
 	equivalentFractions: [
 		[1, 2, 4, 8, 12],
@@ -150,14 +145,12 @@ var questions = {
 		[10, 12],   [12, 15],   [20, 25],
 		[30, 40],   [18, 45],   [16, 56],
 		[16, 24],   [12, 18],   [20, 28]
-
 	],
 	improperAndMixedFractions: [
 		["", 14, 3],  [3, 1, 2],    ["", 9, 2],
 		[4, 1, 3],    ["", 14, 2],  [-5, 3, 5],
 		["-", 12, 7], [7, 3, 8],    ["", 23, 2],
-		[9, 1, 7]    
-		
+		[9, 1, 7]
 	],
 	solveEquations: [
 		["a-5=4"],  ["3x=12"],
@@ -165,7 +158,6 @@ var questions = {
 		["10m+30=8m-50"],  ["11t+9t-10=50"],
 		["3(a-5)=18"],  ["(1/2)n+(3/5)=(2/3)"],
 		["(4/5)b=(8/15)"],  ["(4/3)w =(3/2)=(5/6)"]
-	
 	],
 	addSubtractFractions: [ //[a,b,c,+,d,e,f] becomes a(b/c)+d(e/f) where a(b/c) is the mixed number a b/c.
 		["", 5, 11, "+", "", 2, 11],  ["", 3, 8, "+", "", 1, 2],
@@ -360,8 +352,8 @@ var correctAnswers = {
 		[19], [4],
 		[11], [9],
 		[-40], [30],
-		[11], [2/5],
-		[2/3], [1-7/4]
+		[11], ["2/5"],
+		["2/3"], ["1-7/4"]
 	],
 	addSubtractFractions: [
 		[7, 11],  [7, 8],
@@ -406,8 +398,8 @@ var correctAnswers = {
 		[20], [88]
 	],
 	percentProblems: [
-		[50], ["20%"], 
-		["20%"], [88]
+		[50], [20], 
+		[20], [88]
 	]
 };
 var userAnswers = {
@@ -492,9 +484,7 @@ var timeLimits = { //Given in minutes
 	addSubtractIntegers: 3, //0.25, //3,
 	multiplyDivideIntegers: 3, //0.25, //3,
 	theNumberGame: 3, //0.25, //3,
-
-	orderOfOperations: /*0*/ 0.1, //0.25, //3,
-
+	orderOfOperations: 3, //0.25, //3,
 	equivalentFractions: 3, //0.25, //3,
 	reducingFractions: 3, //0.25, //3,
 	improperAndMixedFractions: 2, //0.25, //2,
