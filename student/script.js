@@ -94,13 +94,10 @@ var questions = {
 		[-8, "+", 10],      [12, "-", "(-5)"],  [3, "-", 12],
 		[-2, "-", "(-5)"],  [-9, "+", -2],      [10, "+", -11],
 		[-5, "-", 3],       [-8, "+", 7],       [2, "-", "(-11)"],
-		[0, "-", -10],      [-12, "+", -4],     [-5, "+", 9],
+		[0, "-", "(-10)"],      [-12, "+", -4],     [-5, "+", 9],
 		[4, "-", "(-9)"],   [-3, "+", 6],       [7, "-", 10],
 		[-10, "+", -9],     [4, "+", -1],       [-8, "+", 8],
-		[-30, "+", 10],     [-11, "-", 41],     [-30, "+", 18],
-		[12, "+", -30],     [12, "-", "(-15)"], [30, "-", 42],
-		[-22, "-", "(-5)"], [-90, "+", -20],    [17, "+", -11],
-		[-57, "-", 33],     [-81, "+", 11],     [22, "-", "(-11)"]
+		[-30, "+", 10],     [-11, "-", 41]     
 	],
 	multiplyDivideIntegers: [
 		[-20, "&divide;", 10],     [-1, "&bull;", "(-1)"],    [-16, "&divide;", "(-8)"],
@@ -113,10 +110,7 @@ var questions = {
 		[-5, "&bull;", 8],         [-56, "&divide;", -7],     [-20, "&bull;", "(-20)"],
 		[0, "&bull;", -10],        [-144, "&divide;", -16],   [-72, "&divide;", 9],
 		[7, "&bull;", "(-9)"],     [-42, "&divide;", 6],      [-17, "&bull;", 10],
-		[-8, "&bull;", -9],        [51, "&divide;", -3],      [-88, "&divide;", 22],
-		[-13, "&bull;", 4],        [-9, "&bull;", "(-12)"],   [-420, "&divide;", -20],
-		[325, "&divide;", -25],    [8, "&bull;", "(-9)"],     [144, "&divide;", -12],
-		[-15, "&bull;", "(-8)"],   [132, "&divide;", -12],    [9, "&bull;", 25]
+		[-8, "&bull;", -9],        [51, "&divide;", -3]      
 	],
 	theNumberGame: [
 		[12, 8],
@@ -129,11 +123,11 @@ var questions = {
 		[72, -17]
 	],
 	orderOfOperations: [
-		["6+3&bull;2"], ["12-6&bull;2"]
-		["16+&divide;&bull;4"], ["8&bull;4&divide;2"],
-		["2&bull;3^4"],  ["-3^2"]
-		["(2+3)^2"],  ["2&bull;&bull;2^2+3^2"]
-		["8(3+4)"],  ["-(-2)^2"]
+		["6 + 3 &bull;2"], ["12 - 6 &bull;2"],
+		["16 &divide;2 &bull;4"], ["8 &bull; 4 &divide;2"],
+		["2 &bull; 3^4"],  ["-3^2"],
+		["(2 + 3)^2"],  ["2 &bull; 2^2 + 3^2"],
+		["8(3 + 4)"],  ["-(-2)^2"]
 	],
 	equivalentFractions: [
 		[1, 2, 4, 8, 12],
@@ -160,11 +154,11 @@ var questions = {
 		
 	],
 	solveEquations: [
-		["a-5=4"],  ["3x=12"],
-		["h+(-4)=7"],  ["-4x+15=-21"],
-		["10m+30=8m-50"],  ["11t+9t-10=50"],
-		["3(a-5)=18"],  ["(1/2)n+(3/5)=(2/3)"],
-		["(4/5)b=(8/15)"],  ["(4/3)w =(3/2)=(5/6)"]
+		["a - 5 = 4"],  ["3x = 12"],
+		["h + (-4) = 7"],  ["-4x + 15 = -21"],
+		["10m + 30 = 8m - 50"],  ["11t + 9t - 10 = 50"],
+		["3(a - 5) = 18"],  ["(1/2)n + (3/5) = (2/3)"],
+		["(4/5)b = (8/15)"],  ["(4/3)w + (3/2) = (5/6)"]
 	
 	],
 	addSubtractFractions: [ //[a,b,c,+,d,e,f] becomes a(b/c)+d(e/f) where a(b/c) is the mixed number a b/c.
@@ -200,23 +194,23 @@ var questions = {
 	decimals: [
 		["Which digit is in the thousandths place? 95603.84172"],
 		["Which digit is in the tenths place? 95603.84172"],
-		["3.5+1.3"], ["7.6+1.23"], ["10.4-6.6"], ["2.5&bull;0.02"],
-		["4.03&bull;2.0"], ["0.002&bull;0.05"], ["12.6&divide;4.2"],
-		["5.2&divide;0.01"]
+		["3.5 + 1.3"], ["7.6 + 1.23"], ["10.4 - 6.6"], ["2.5 &bull; 0.02"],
+		["4.03 &bull; 2.0"], ["0.002 &bull ;0.05"], ["12.6 &divide; 4.2"],
+		["5.2 &divide; 0.01"]
 	],
 	percents: [
 		["Write as a percent: 1/10"], ["Write as a percent: 7/25"],
 		["Write as a percent: 1.25"], ["Write as a percent: 0.04"],
-		["Write as a reduced fraction: 25%"],["Write as a reduced fraction: 45%"]
+		["Write as a reduced fraction: 25%"],["Write as a reduced fraction: 45%"],
 		["Write as a decimal: 0.45%"],["Write as a decimal: 150%"]
 		["25% of 80 is"], ["What is 110% of 80?"]
 	],
 	percentProblems: [
-		["40 is 50% of"], ["12 is what percent of 60?"],
+		["40 is 80% of"], ["12 is what percent of 60?"],
 		
 		["Jackson started the month with a debit card balance of $500. He finished the month with a balance of $400. By what percent did his balance decrease?"],
 		 
-		["Monet started the month with a debit card balance of $200. Shee finished the month with a balance of $500. By what percent did her balance increase?"],
+		["Monet started the month with a debit card balance of $200. Shee finished the month with a balance of $500. By what percent did her balance increase?"]
 		 
 	]
 };
@@ -300,10 +294,7 @@ var correctAnswers = {
 		[10],  [-16],  [4],
 		[13],  [3],    [-3],
 		[-19], [3],    [0],
-		[-20], [-52],  [-12],
-		[-18], [27],   [-12],
-		[-17], [-110], [6],
-		[-90], [-70],  [33]
+		[-20], [-52]
 	],
 	multiplyDivideIntegers: [
 		[-2],  [1],    [2],
@@ -316,10 +307,7 @@ var correctAnswers = {
 		[-40], [8],    [400],
 		[0],   [9],    [-8],
 		[-63], [-7],   [-170],
-		[72],  [-17],  [-4],
-		[-52], [108],  [21],
-		[-13], [-72],  [-12],
-		[120], [-11],  [225]
+		[72],  [-17]
 	],
 	theNumberGame: [
 		[2,  6],
@@ -361,7 +349,7 @@ var correctAnswers = {
 		[11], [9],
 		[-40], [30],
 		[11], [2/5],
-		[2/3], [1-7/4]
+		[2/3], [-7/4]
 	],
 	addSubtractFractions: [
 		[7, 11],  [7, 8],
@@ -394,8 +382,8 @@ var correctAnswers = {
 		[803000], [14]
 	],
 	decimals: [
-		[1],[0],
-		[4.8], [9.348], [3.8], [0.05],
+		[1],[8],
+		[4.8], [8.83], [3.8], [0.05],
 		[8.06], [0.0001], [3], [520]
 	],
 	percents: [
