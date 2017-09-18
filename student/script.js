@@ -215,12 +215,10 @@ var questions = {
 		["25% of 80 is"], ["What is 110% of 80?"]
 	],
 	percentProblems: [
-		["40 is 80% of"], ["12 is what percent of 60?"],
-		
+		["40 is 80% of"],
+		["12 is what percent of 60?"],
 		["Jackson started the month with a debit card balance of $500. He finished the month with a balance of $400. By what percent did his balance decrease?"],
-		 
 		["Monet started the month with a debit card balance of $200. Shee finished the month with a balance of $500. By what percent did her balance increase?"]
-		 
 	]
 };
 var correctAnswers = {
