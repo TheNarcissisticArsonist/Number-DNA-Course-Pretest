@@ -401,13 +401,13 @@ var correctAnswers = {
 	percents: [
 		[10], [28],
 		[125], [4],
-		[1/4],[9/20],
+		["1/4"],["9/20"],
 		[0.0045],[1.5],
 		[20], [88]
 	],
 	percentProblems: [
-		[50], [20%], 
-		[20%], [88]
+		[50], ["20%"], 
+		["20%"], [88]
 	]
 };
 var userAnswers = {
@@ -588,14 +588,13 @@ function clickedACheckbox(e) {
 	document.getElementById("testSelectionCheckbox" + currentPart).checked = true;
 }
 function sendAnswers() {
-	//Prefilled form link: https://docs.google.com/a/umich.edu/forms/d/e/1FAIpQLSfvbHVlkg0_x71NgBrFM8vqWeU4MOzTYFqoUXHUptmqAkqq9A/viewform?usp=pp_url&entry.409708748=FNAME&entry.2035091652=LNAME&entry.563116119=SNAME&entry.1400737813=SCORE1&entry.2061434955=SCORE2&entry.1426620466=SCORE3&entry.370173566=SCORE4&entry.1635064555=SCORE5&entry.401578479=SCORE6&entry.15559398=SCORE7
-	//Submitted form link: https://docs.google.com/a/umich.edu/forms/d/e/1FAIpQLSfvbHVlkg0_x71NgBrFM8vqWeU4MOzTYFqoUXHUptmqAkqq9A/formResponse?usp=pp_url&entry.409708748=FNAME&entry.2035091652=LNAME&entry.563116119=SNAME&entry.1400737813=SCORE1&entry.2061434955=SCORE2&entry.1426620466=SCORE3&entry.370173566=SCORE4&entry.1635064555=SCORE5&entry.401578479=SCORE6&entry.15559398=SCORE7
+	//Prefilled form link https://docs.google.com/forms/d/e/1FAIpQLSfvbHVlkg0_x71NgBrFM8vqWeU4MOzTYFqoUXHUptmqAkqq9A/viewform?usp=pp_url&entry.409708748=FIRST_NAME&entry.2035091652=LAST_NAME&entry.563116119=SCHOOL_NAME&entry.1773403100=TEST_NAME&entry.1400737813=TEST_1_SCORE&entry.2061434955=TEST_2_SCORE&entry.1426620466=TEST_3_SCORE&entry.370173566=TEST_4_SCORE&entry.1635064555=TEST_5_SCORE&entry.401578479=TEST_6_SCORE&entry.15559398=TEST_7_SCORE
+	//Submission link https://docs.google.com/forms/d/e/1FAIpQLSfvbHVlkg0_x71NgBrFM8vqWeU4MOzTYFqoUXHUptmqAkqq9A/formResponse?usp=pp_url&entry.409708748=FIRST_NAME&entry.2035091652=LAST_NAME&entry.563116119=SCHOOL_NAME&entry.1773403100=TEST_NAME&entry.1400737813=TEST_1_SCORE&entry.2061434955=TEST_2_SCORE&entry.1426620466=TEST_3_SCORE&entry.370173566=TEST_4_SCORE&entry.1635064555=TEST_5_SCORE&entry.401578479=TEST_6_SCORE&entry.15559398=TEST_7_SCORE
 
 	document.getElementById("testCont").style.display = "none";
 	document.getElementById("thanks").style.display = "inline-block";
 
-	var submissionURL = "https://docs.google.com/a/umich.edu/forms/d/e/1FAIpQLSfvbHVlkg0_x71NgBrFM8vqWeU4MOzTYFqoUXHUptmqAkqq9A/formResponse?usp=pp_url&entry.409708748=" + firstName + "&entry.2035091652=" + lastName + "&entry.563116119=" + school + "&entry.1400737813=" + userScores[0] + "&entry.2061434955=" + userScores[1] + "&entry.1426620466=" + userScores[2] + "&entry.370173566=" + userScores[3] + "&entry.1635064555=" + userScores[4] + "&entry.401578479=" + userScores[5] + "&entry.15559398=" + userScores[6];
-	window.open(submissionURL, "_blank");
+	var submissionURL = "https://docs.google.com/forms/d/e/1FAIpQLSfvbHVlkg0_x71NgBrFM8vqWeU4MOzTYFqoUXHUptmqAkqq9A/formResponse?usp=pp_url&entry.409708748=" + firstName + "&entry.2035091652=" + lastName + "&entry.563116119=" + school + "&entry.1773403100=" + currentPart + "&entry.1400737813=" + userScores[0] + "&entry.2061434955=" + userScores[1] + "&entry.1426620466=" + userScores[2] + "&entry.370173566=" + userScores[3] + "&entry.1635064555=" + userScores[4] + "&entry.401578479=" + userScores[5] + "&entry.15559398=" + userScores[6];
 
 	console.log(submissionURL);
 	document.body.innerHTML += "<br><br>If the submission received page didn't open, please click this link to submit:<br><a href=" + submissionURL + ">Submit</a>";
@@ -615,6 +614,9 @@ function checkAnswers() {
 						case "divisibility":
 							var responseNums = userAnswers[currentTestName][j][0].split(",");
 							var correctNums = correctAnswers[currentTestName][j][0].split(",");
+							for(var k=0; k<correctNums.length; ++k) {
+								correctNums[k] = Number(correctNums[k]);
+							}
 							for(var k=0; k<responseNums.length; ++k) {
 								responseNums[k] = Number(responseNums[k]);
 								if(!correctNums.includes(responseNums[k])) {
@@ -634,6 +636,9 @@ function checkAnswers() {
 						case "factorWholeNumbers":
 							var responseNums = userAnswers[currentTestName][j][0].split(",");
 							var correctNums = correctAnswers[currentTestName][j][0].split(",");
+							for(var k=0; k<correctNums.length; ++k) {
+								correctNums[k] = Number(correctNums[k]);
+							}
 							for(var k=0; k<responseNums.length; ++k) {
 								responseNums[k] = Number(responseNums[k]);
 								if(!correctNums.includes(responseNums[k])) {
@@ -653,6 +658,9 @@ function checkAnswers() {
 						case "primeFactorization":
 							var responseNums = userAnswers[currentTestName][j][0].split(",");
 							var correctNums = correctAnswers[currentTestName][j][0].split(",");
+							for(var k=0; k<correctNums.length; ++k) {
+								correctNums[k] = Number(correctNums[k]);
+							}
 							while(responseNums.length > 0 && correctNums.length > 0) {
 								if(responseNums.length != correctNums.length) {
 									correct = false;
@@ -673,6 +681,9 @@ function checkAnswers() {
 						case "theNumberGame":
 							var responseNums = userAnswers[currentTestName][j].slice(0);
 							var correctNums = correctAnswers[currentTestName][j].slice(0);
+							for(var k=0; k<correctNums.length; ++k) {
+								correctNums[k] = Number(correctNums[k]);
+							}
 							while(responseNums.length > 0 && correctNums.length > 0) {
 								if(responseNums.length != correctNums.length) {
 									correct = false;
