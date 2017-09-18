@@ -212,7 +212,7 @@ var questions = {
 		 
 		["Monet started the month with a debit card balance of $200. Shee finished the month with a balance of $500. By what percent did her balance increase?"]
 		 
-	],
+	]
 };
 var correctAnswers = {
 	multiplyWholeNumbers: [
