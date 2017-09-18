@@ -195,14 +195,14 @@ var questions = {
 		["Which digit is in the thousandths place? 95603.84172"],
 		["Which digit is in the tenths place? 95603.84172"],
 		["3.5 + 1.3"], ["7.6 + 1.23"], ["10.4 - 6.6"], ["2.5 &bull; 0.02"],
-		["4.03 &bull; 2.0"], ["0.002 &bull ;0.05"], ["12.6 &divide; 4.2"],
+		["4.03 &bull; 2.0"], ["0.002 &bull; 0.05"], ["12.6 &divide; 4.2"],
 		["5.2 &divide; 0.01"]
 	],
 	percents: [
 		["Write as a percent: 1/10"], ["Write as a percent: 7/25"],
 		["Write as a percent: 1.25"], ["Write as a percent: 0.04"],
-		["Write as a reduced fraction: 25%"],["Write as a reduced fraction: 45%"],
-		["Write as a decimal: 0.45%"],["Write as a decimal: 150%"]
+		["Write as a reduced fraction: 25%"], ["Write as a reduced fraction: 45%"],
+		["Write as a decimal: 0.45%"], ["Write as a decimal: 150%"],
 		["25% of 80 is"], ["What is 110% of 80?"]
 	],
 	percentProblems: [
@@ -212,7 +212,7 @@ var questions = {
 		 
 		["Monet started the month with a debit card balance of $200. Shee finished the month with a balance of $500. By what percent did her balance increase?"]
 		 
-	]
+	],
 };
 var correctAnswers = {
 	multiplyWholeNumbers: [
