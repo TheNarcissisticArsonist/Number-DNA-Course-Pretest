@@ -212,7 +212,7 @@ var questions = {
 		 
 		["Monet started the month with a debit card balance of $200. Shee finished the month with a balance of $500. By what percent did her balance increase?"]
 		 
-	],
+	]
 };
 var correctAnswers = {
 	multiplyWholeNumbers: [
@@ -345,7 +345,7 @@ var correctAnswers = {
 		[0, 64, 7]
 	],
 	solveEquations: [
-		[19], [4],
+		[9], [4],
 		[11], [9],
 		[-40], [30],
 		[11], [2/5],
@@ -395,8 +395,8 @@ var correctAnswers = {
 	],
 	percentProblems: [
 		[50], ["20%"], 
-		["20%"], [88]
-	],
+		["20%"], [150]
+	]
 };
 var userAnswers = {
 	multiplyWholeNumbers: [
