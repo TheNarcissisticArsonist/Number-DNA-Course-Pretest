@@ -570,7 +570,28 @@ function sendAnswers() {
 	document.getElementById("testCont").style.display = "none";
 	document.getElementById("thanks").style.display = "inline-block";
 
-	var submissionURL = "https://docs.google.com/forms/d/e/1FAIpQLSfvbHVlkg0_x71NgBrFM8vqWeU4MOzTYFqoUXHUptmqAkqq9A/formResponse?usp=pp_url&entry.409708748=" + firstName + "&entry.2035091652=" + lastName + "&entry.563116119=" + school + "&entry.1773403100=" + currentPart + "&entry.1400737813=" + userScores[0] + "&entry.2061434955=" + userScores[1] + "&entry.1426620466=" + userScores[2] + "&entry.370173566=" + userScores[3] + "&entry.1635064555=" + userScores[4] + "&entry.401578479=" + userScores[5] + "&entry.15559398=" + userScores[6];
+	for(var i=0; i<firstName.length; ++i) {
+		if(firstName.substring(i, i+1) == " ") {
+			var newString = firstName.slice(0, i) + "%20" + firstName.slice(i+1);
+			firstName = newString;
+		}
+	}
+	for(var i=0; i<lastName.length; ++i) {
+		if(lastName.substring(i, i+1) == " ") {
+			var newString = lastName.slice(0, i) + "%20" + lastName.slice(i+1);
+			lastName = newString;
+		}
+	}
+	for(var i=0; i<school.length; ++i) {
+		if(school.substring(i, i+1) == " ") {
+			var newString = school.slice(0, i) + "%20" + school.slice(i+1);
+			school = newString;
+		}
+	}
+	
+
+	var submissionURL = "docs.google.com/forms/d/e/1FAIpQLSfvbHVlkg0_x71NgBrFM8vqWeU4MOzTYFqoUXHUptmqAkqq9A/formResponse?usp=pp_url&entry.409708748=" + firstName + "&entry.2035091652=" + lastName + "&entry.563116119=" + school + "&entry.1773403100=" + currentPart + "&entry.1400737813=" + userScores[0] + "&entry.2061434955=" + userScores[1] + "&entry.1426620466=" + userScores[2] + "&entry.370173566=" + userScores[3] + "&entry.1635064555=" + userScores[4] + "&entry.401578479=" + userScores[5] + "&entry.15559398=" + userScores[6];
+	submissionURL = "https://" + submissionURL;
 
 	console.log(submissionURL);
 	document.body.innerHTML += "<br><br>If the submission received page didn't open, please click this link to submit:<br><a href=" + submissionURL + ">Submit</a>";
