@@ -593,6 +593,8 @@ function sendAnswers() {
 	var submissionURL = "docs.google.com/forms/d/e/1FAIpQLSfvbHVlkg0_x71NgBrFM8vqWeU4MOzTYFqoUXHUptmqAkqq9A/formResponse?usp=pp_url&entry.409708748=" + firstName + "&entry.2035091652=" + lastName + "&entry.563116119=" + school + "&entry.1773403100=" + currentPart + "&entry.1400737813=" + userScores[0] + "&entry.2061434955=" + userScores[1] + "&entry.1426620466=" + userScores[2] + "&entry.370173566=" + userScores[3] + "&entry.1635064555=" + userScores[4] + "&entry.401578479=" + userScores[5] + "&entry.15559398=" + userScores[6];
 	submissionURL = "https://" + submissionURL;
 
+	window.open(submissionURL, "_blank");
+
 	console.log(submissionURL);
 	document.body.innerHTML += "<br><br>If the submission received page didn't open, please click this link to submit:<br><a href=" + submissionURL + ">Submit</a>";
 }
