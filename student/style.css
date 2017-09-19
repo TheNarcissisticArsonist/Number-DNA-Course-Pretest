@@ -27,6 +27,7 @@ div#testExplanationCont {
 }
 div#testCont {
 	display: none;
+	max-width: 1000px;
 }
 div#timer {
 	display: none;
